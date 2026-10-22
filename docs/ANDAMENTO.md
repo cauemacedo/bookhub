@@ -1,19 +1,10 @@
-# Andamento do projeto
+# Andamento
 
-## Situação atual
+## O que foi feito
 
-O BookHub está na fase inicial de organização. O repositório já existe e a documentação começou a ser estruturada.
+- Criado o repositório no GitHub.
+- Organizada a documentação básica.
 
-## O que foi feito nesta atualização
+## Próximo passo
 
-- Melhorada a apresentação do projeto no README.
-- Criado um planejamento com as etapas principais.
-- Criado este registro de andamento.
-
-## Próximos passos
-
-- Definir melhor as funcionalidades do BookHub.
-- Pensar nas informações que precisarão ser armazenadas.
-- Começar a implementação conforme o conteúdo das próximas atividades.
-
-Por enquanto, este registro trata apenas da organização do projeto, não da conclusão de funcionalidades.
+Continuar as atividades do Dev Hub e registrar as alterações.
