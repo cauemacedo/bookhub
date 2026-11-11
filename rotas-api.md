@@ -70,3 +70,10 @@ Cada obra pertence a uma categoria.
 | `POST /categorias` | Cadastrar uma categoria. | Body: `nome`. | Nome preenchido e único. | `201` categoria criada, `400` dados inválidos, `409` nome já cadastrado. |
 | `PATCH /categorias/{id}` | Atualizar o nome da categoria. | Caminho: `id`. Body: `nome`. | ID válido, categoria existente e nome preenchido e livre entre as outras categorias. | `200` categoria atualizada, `400` dados inválidos, `404` categoria não encontrada, `409` nome já cadastrado. |
 | `DELETE /categorias/{id}` | Remover uma categoria. | Caminho: `id`. | ID válido e categoria existente, sem obras associadas. | `204` removida, `400` ID inválido, `404` categoria não encontrada, `409` categoria com obras. |
+
+## Autenticação e permissões
+
+Estas regras são propostas para o futuro backend e ainda precisam ser implementadas.
+
+- **`401 Unauthorized`** ocorre quando alguém tenta acessar uma rota protegida sem estar autenticado. Por exemplo, `POST /obras` poderia exigir que a pessoa fizesse login antes de cadastrar uma obra.
+- **`403 Forbidden`** ocorre quando a pessoa está autenticada, mas não tem permissão para realizar a ação. Por exemplo, `DELETE /categorias/{id}` poderia permitir que apenas administradores excluíssem categorias.
