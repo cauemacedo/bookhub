@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>BookHub</h1>
+      <p>Minha biblioteca de livros</p>
+    </header>
+
+    <form id="form-livro">
+      <label for="nome">Nome do livro</label>
+      <input type="text" id="nome" required>
+
+      <label for="autor">Autor</label>
+      <input type="text" id="autor" required>
+
+      <button type="submit">Adicionar livro</button>
+      <p id="mensagem" role="status"></p>
+    </form>
+
+    <section>
+      <h2>Livros cadastrados</h2>
+      <ul id="lista-livros">
+        <li>Dom Casmurro — Machado de Assis</li>
+        <li>O Pequeno Príncipe — Antoine de Saint-Exupéry</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
